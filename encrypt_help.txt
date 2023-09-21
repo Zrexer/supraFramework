@@ -1,0 +1,6 @@
+-b85 {text}
+-b64 {text}
+-b32 {text}
+-b16 {text}
+cd .. [go back directory]
+cls / clear [for clear terminal]

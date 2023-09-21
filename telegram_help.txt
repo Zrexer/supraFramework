@@ -1,0 +1,11 @@
+set token {token}
+set chat id {chat id}
+set msg {message}
+show-lists
+clear-all-lists
+clear-token
+clear-chat-id
+clear-msg
+start-bot
+cd .. [go back directory]
+cls / clear [for clear terminal]

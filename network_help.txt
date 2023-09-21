@@ -1,0 +1,7 @@
+get site -ip {domain name}
+get site -html {https://example.url}
+get site -s {https://example.url}
+get site full scan {https://example.url}
+scan port {port}
+cd .. [go back directory]
+cls / clear [for clear terminal]

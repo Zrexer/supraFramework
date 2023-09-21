@@ -1,0 +1,27 @@
+-p / --password [create a password with numbers/upper words/lower words/symbols]
+
+-w / --word [create a password with upper word and lower word]
+
+-uw / --upper-word [create a password with upper word {just} ]
+
+-lw / --lower-password [create a password with lower word]
+
+-i / --integer [create a password with number]
+
+-is / --integer-symbol [create a password with number and symbols]
+
+-s / --symbol [create a password with symblos]
+
+-ws / --word-symbol [create a password with upper word/lower word/symbols]
+
+-lws / --lower-word-symbol [create a password with lower word/symbols]
+
+-uws / --upper-word-symbol [create a password with upper word/symbols]
+
+-iw / --integer-word [create a password with integer/upper word/lower word]
+
+-lwi / --lower-word-integer [create a password with integer/lower word]
+
+-uwi / --upper-word-integer [create a password with integer/upper word]
+
+
