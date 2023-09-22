@@ -31,7 +31,7 @@ main supra :
         cd .. [go back directory]
         cls / clear [for clear terminal]
 
-    cd decrypt / cd enc [go to decrypt directory] :
+    cd decrypt / cd dec [go to decrypt directory] :
         -b85 {text}
         -b64 {text}
         -b32 {text}
