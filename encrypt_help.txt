@@ -2,5 +2,12 @@
 -b64 {text}
 -b32 {text}
 -b16 {text}
+-md5 {text}
+-sha256 {text}
+-sha512 {text}
+-sha224 {text}
+-sha1 {text}
+-sha384 {text}
+-sha3_256 {text}
 cd .. [go back directory]
 cls / clear [for clear terminal]
