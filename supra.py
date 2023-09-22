@@ -12,11 +12,12 @@ try:
     import requests
     import time
     import builtwith
+    import hashlib
     import base64
     import random
     
 except ModuleNotFoundError:
-    system("pip install colorama && pip install socket && pip install requests && pip install builtwith && pip install base64")
+    system("pip install colorama && pip install socket && pip install requests && pip install builtwith && pip install base64 && pip install hashlib")
 
 # Show Colors in CMD
 
@@ -242,6 +243,62 @@ def encrypt(text : str):
         new_text = text.replace("-b85 ", "")
         print("")
         print(base64.b85encode(new_text.encode("ascii")))
+        print("")
+        
+    elif text.startswith("-md5"):
+        new_text = text.replace("-md5 ", "")
+        strTomd5 = hashlib.md5()
+        strTomd5.update(new_text.encode("utf-8"))
+        print("")
+        print(strTomd5.hexdigest())
+        print("")
+        
+    elif text.startswith("-sha256"):
+        new_text = text.replace("-sha256 ", "")
+        strTo256 = hashlib.sha256()
+        strTo256.update(new_text.encode("utf-8"))
+        print("")
+        print(strTo256.hexdigest())
+        print("")
+        
+    elif text.startswith("-sha224"):
+        new_text = text.replace("-sha224 ", "")
+        strTo224 = hashlib.sha224()
+        strTo224.update(new_text.encode('utf-8'))
+        print("")
+        print(strTo224.hexdigest())
+        print("")
+        
+    elif text.startswith("-sha1"):
+        new_text = text.replace("-sha1 ","")
+        strTo1 = hashlib.sha1()
+        strTo1.update(new_text.encode('utf-8'))
+        print("")
+        print(strTo1.hexdigest())
+        print("")
+        
+    elif text.startswith("-sha512"):
+        new_text = text.replace("-sha512 ", "")
+        strTo512 = hashlib.sha512()
+        strTo512.update(new_text.encode("utf-8"))
+        print("")
+        print(strTo512.hexdigest())
+        print("")
+        
+    elif text.startswith("-sha384"):
+        new_text = text.replace("-sha384 ", "")
+        strTo384 = hashlib.sha384()
+        strTo384.update(new_text.encode("utf-8"))
+        print("")
+        print(strTo384.hexdigest())
+        print("")
+    
+    elif text.startswith("-sha3_256"):
+        new_text = text.replace("-sha3_256 ", "")
+        strTo3286 = hashlib.sha3_256()
+        strTo3286.update(new_text.encode('utf-8'))
+        print("")
+        print(strTo3286.hexdigest())
         print("")
     
     elif text.startswith("font"):
